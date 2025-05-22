@@ -77,6 +77,4 @@ To log in to the Police Incident Reporting System, use one of the following acco
 | moreland | fuzz42   | Officer       |
 | daniels  | copper99 | Administrator |
 
-> Accounts without a listed role default to standard officer permissions.
 
-![image](https://github.com/user-attachments/assets/1235b25e-f4da-43ef-9b84-b49d6a681d06)
