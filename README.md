@@ -1,75 +1,82 @@
-# COMP4039-DIS Docker
+# 🚔 Police Incident Reporting Website (Local Version)
 
-## author: Stuart Reeves
+This is a PHP + MariaDB web application that allows police officers to record and manage incident data involving vehicles, people, and offences.
 
-Docker files for COMP4039-DIS (Databases, Interfaces and Software Design Principles) L4 module.
+Designed as part of MSc coursework (COMP4039).
 
-Contains the principal components of the standard LAMP (Linux, Apache, MySQL, PHP) stack:
-- apache2 (web server)
-- mariadb v10 (OSS MySQL server)
-- php v8
+---
 
-The Docker compose file describing this (docker-compose.yml) also builds phpmyadmin, which provides a web-based GUI for the SQL database.
+## 📦 Technologies
 
-In order to start the container you will need to download Docker. This could either be the desktop app (https://www.docker.com/products/docker-desktop/) or, depending on your OS, some other method e.g., via homebrew for macOS or via a packaging system if you run Linux.
+- PHP 8.1 + Apache
+- MariaDB (MySQL compatible)
+- Docker + Docker Compose
+- PHPmyAdmin
 
-Once Docker is installed, run
+---
 
-	docker compose up
+## 🛠️ How to Run Locally (on `localhost`)
 
-at your command line. The relevant images will be pulled down (php-apache, mariadb, phpmyadmin), then the containers will be started. This should all be visible in the Docker desktop app.
+### 🔄 1. Prerequisites
 
-You can now point a browser at the following locations:
+- [Docker Desktop](https://www.docker.com/products/docker-desktop) installed and running
+- Git Bash or terminal
 
-	http://localhost/index.php - index to the example code included
-	http://localhost:8081 - phpmyadmin interface
+---
 
+### 📁 2. Open Terminal in Project Folder
 
-## Contents description
+Navigate to the folder that contains `docker-compose.yml`:
 
-html/ - all your HTML, PHP, CSS, JS etc. files go here (note that this dir includes example code from the module which you can use without citation in your coursework)
+```bash
+cd "C:/Users/Bradley/Documents/20504177_DB/COMP4039-CW2-psxbm3-20504177/psxbm3-20504177_Docker"
 
-mariadb/ - SQL files that are used to build the database when Docker starts; this includes the initial database for Coursework 2 which you will probably want to modify, as well as the database for the example code (phpdemos); also contains instructions to build the mariadb image
+🐳 3. Start the Website with Docker
+bash
+Copy
+Edit
+docker-compose up --build
+This builds and runs:
 
-mariadb-data/ - this is where the mariadb Docker container's database stores its files; if you want to rebuild your databases from scratch, see below for instructions
+PHP + Apache server
 
-php-apache/ - contains the instructions to build the php-apache image
+MariaDB database
 
+Adminer (on port 8081)
 
-## Deleting the database and rebuilding
+🌐 4. Access in Browser
+Website: http://localhost
 
-If for whatever reason you want to delete your database and rebuild from the SQL source included in mariadb/ then simply delete the contents of mariadb-data and run 
-	
-	docker compose up
-
-again.
-
-
-## Where is my Docker running from?
-
-If you have trouble getting pages to load in your browser it may be that you have more than one Docker folder. You can check what part of your filesystem your containers are mapped to with the following command:
-
-    docker inspect -f "{{ .Mounts }}"  <your-container-id-or-name>
-
-You can find your container id (e.g., the apache one) in Docker Desktop - it's a string of numbers and letters.
-
-You can also locate the equivalent information in the Docker Desktop interface if you click on your main container - the info should be displayed near the top of the window.
+Adminer: http://localhost:8081
 
 
-## Specific OS-related notes
+Project Structure
+project-root/
+├── html/                  # Frontend PHP files
+│   ├── index.php
+│   ├── php/
+│   ├── pictures/
+│   └── style/
+├── mariadb/               # SQL scripts used to build DB
+│   ├── 2_coursework-2-database.sql
+├── docker-compose.yml
+├── Dockerfile
 
-### Windows 
 
-If you are installing Docker for Windows, you may need to install the Windows Subsystem for Linux (WSL). You will either be told to do so or you might encounter an error related to "WSL kernel version too low" or similar. In either case you will need to run cmd.exe and the following commands:
-
-	wsl --install
-	wsl --update
-
-If you receive an "Unexpected WSL error" from Docker Desktop you may be able to resolve it by checking that virtualisation is enabled in your system BIOS. This can usually be accessed at startup via a specific key (e.g., F2) - depending on your machine.
+✅ Done!
+Now go to http://localhost — your site should be running with full database access.
 
 
-### macOS
+## 🔐 Login Details
 
-If you are installing Docker for macOS, some have encountered errors where Docker Desktop won't start. In which case try some of the following:
+To log in to the Police Incident Reporting System, use one of the following accounts:
 
-	https://mattsimpson.ca/2022/12/27/docker-desktop-for-mac-wont-start
+| Username | Password | Role          |
+|----------|----------|---------------|
+| mcnulty  | plod123  | Officer       |
+| moreland | fuzz42   | Officer       |
+| daniels  | copper99 | Administrator |
+
+> Accounts without a listed role default to standard officer permissions.
+
+![image](https://github.com/user-attachments/assets/1235b25e-f4da-43ef-9b84-b49d6a681d06)
