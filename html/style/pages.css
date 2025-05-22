@@ -1,0 +1,353 @@
+
+/* Homepage card spacing */
+/* ---------------------------------------------------------------------*/
+/* ---------------------------------------------------------------------*/
+.card-spacing {
+    margin-bottom: 20px;
+}
+/* ---------------------------------------------------------------------*/
+/* ---------------------------------------------------------------------*/
+
+.audit-cell {
+    max-width: 150px;
+    overflow-wrap: break-word;
+    padding: 6px;
+}
+
+.w3-table {
+    margin-bottom: 20px;
+}
+
+.w3-responsive {
+    overflow-x: auto;
+    max-height: 600px;
+    overflow-y: auto;
+}
+
+
+
+
+/* Styling for messages */
+/* ---------------------------------------------------------------------*/
+/* ---------------------------------------------------------------------*/
+
+
+.red-msg {
+    width: 50%; /*  */
+    margin: 20px auto 20px 30%; /*  */
+    padding: 20px; /* Add padding */
+    background-color: #f44336; /*  */
+    color: white; /* */
+    border-radius: 5px; /*  */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /*  */
+    text-align: center; /*  */
+}
+.green-msg {
+    width: 50%; /*  */
+    margin: 20px auto 20px 30%; /* */
+    padding: 20px; /* Add padding */
+    background-color: #2eed08; /* */
+    color: white; /*  */
+    border-radius: 5px; /* */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /*  */
+    text-align: center; /*  */
+}
+
+.yellow-msg {
+    width: 50%; /* */
+    margin: 20px auto 20px 30%; /* */
+    padding: 20px; /* Add padding */
+    background-color: #edd608; /* */
+    color: white; /*  */
+    border-radius: 5px; /* */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* */
+    text-align: center; /* */
+}
+
+
+/* Reference: https://www.w3schools.com/howto/howto_css_profile_card.asp */
+/* ------------------------------------------------------------------------*/
+/* Profile card styling */
+/* ------------------------------------------------------------------------*/
+    .card {
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+        max-width: 400px;
+        margin: auto;
+        text-align: center;
+        font-family: Arial, sans-serif;
+    }
+
+    .title {
+        color: grey;
+        font-size: 18px;
+    }
+
+    button {
+        border: none;
+        outline: 0;
+        display: inline-block;
+        padding: 8px;
+        color: white;
+        background-color: #000;
+        text-align: center;
+        cursor: pointer;
+        width: 100%;
+        font-size: 18px;
+    }
+
+    button:hover {
+        opacity: 0.7;
+}
+/* ----------------------------------------------------------*/
+/* ----------------------------------------------------------*/
+
+
+
+body {
+    font-family: "Raleway", sans-serif;
+    background-color: #f1f1f1; 
+    margin: 0;
+    padding: 0;
+    color: #333; 
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: "Raleway", sans-serif;
+    margin: 0;
+    color: #444;
+}
+
+
+.w3-bar.w3-top {
+    background-color: #000; 
+    color: #fff; 
+}
+
+.w3-bar-item {
+    padding: 14px 20px; 
+}
+
+.w3-bar-item:hover {
+    background-color: #555; 
+    color: #fff;
+}
+
+
+.w3-sidebar {
+    background-color: #fff; 
+    width: 300px;
+    z-index: 3;
+    height: 100%; 
+    overflow: auto; 
+    box-shadow: 2px 0px 5px rgba(0, 0, 0, 0.2); 
+}
+
+.w3-sidebar a {
+    font-weight: bold;
+    color: #333;
+    text-decoration: none;
+    padding: 12px 16px;
+    display: block;
+}
+
+.w3-sidebar a:hover {
+    background-color: #f1f1f1; 
+    color: #000;
+}
+
+.w3-container.w3-row img {
+    width: 46px; 
+    height: 46px;
+    border-radius: 50%; 
+}
+
+.w3-container h5 {
+    margin-top: 16px;
+    font-weight: bold;
+    color: #444;
+}
+
+/* Main content area */
+.w3-main {
+    margin-left: 300px; 
+    margin-top: 43px; 
+    padding: 20px;
+}
+
+.w3-container h5 {
+    margin-bottom: 16px;
+    color: #333;
+}
+
+.w3-row-padding {
+    margin: 16px -8px; 
+}
+
+.w3-quarter {
+    padding: 0 8px; 
+}
+
+/* Dashboard card styles */
+.w3-container {
+    border-radius: 5px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+    transition: transform 0.2s ease; 
+}
+
+.w3-container:hover {
+    transform: translateY(-5px); /* Lift on hover */
+}
+
+.w3-container h4 {
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+.w3-container h3 {
+    margin: 0;
+    font-size: 2em;
+    font-weight: bold;
+}
+
+/* Overlay effect for mobile */
+.w3-overlay {
+    background-color: rgba(0, 0, 0, 0.5); 
+}
+
+/* Button styles */
+button {
+    background-color: #000; 
+    color: #fff; 
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px; 
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+button:hover {
+    background-color: #555; 
+}
+
+/* Utility classes */
+.text-center {
+    text-align: center;
+}
+
+.margin-top {
+    margin-top: 20px;
+}
+
+.padding {
+    padding: 10px;
+}
+
+/* Profile card */
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    max-width: 400px;
+    margin: auto;
+    text-align: center;
+    font-family: Arial, sans-serif;
+}
+
+.title {
+    color: grey;
+    font-size: 18px;
+}
+
+button {
+    border: none;
+    outline: 0;
+    display: inline-block;
+    padding: 8px;
+    color: white;
+    background-color: #000;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+    font-size: 18px;
+}
+
+button:hover {
+    opacity: 0.7;
+}
+
+/* Error message */
+.message-box {
+    width: 20%;
+    margin: auto;
+}
+
+/* -----------------------------*/
+/* -----------------------------*/
+/* Login form for settings.php */
+/* -----------------------------*/
+/* -----------------------------*/
+
+.settings-container {
+    margin: 20px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+}
+.settings-item {
+    padding: 15px 10px;
+    border-bottom: 1px solid #ddd;
+}
+.settings-item:last-child {
+    border-bottom: none;
+}
+.settings-item label {
+    font-weight: bold;
+}
+.settings-item input {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+.save-btn {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+.save-btn:hover {
+    background-color: #45a049;
+}
+.error {
+    color: red;
+    margin-top: 10px;
+}
+.success {
+    color: green;
+    margin-top: 10px;
+}
+
+
+/* -----------------------------*/
+/* ------Responsive design------*/
+/* -----------------------------*/
+
+
+
+@media screen and (max-width: 768px) {
+    .w3-sidebar {
+        width: 100%; 
+        display: none; 
+    }
+
+    .w3-main {
+        margin-left: 0; 
+    }
+
+    .w3-bar-item {
+        padding: 10px 14px;
+    }
+}
